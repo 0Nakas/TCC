@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.accessibility-bar {
+    background-color: #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+.accessibility-bar span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contrast-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#default-contrast {
+    background-color: #333;
+}
+
+#dark-contrast {
+    background-color: #000;
+}
+
+#light-contrast {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    margin-right: 20px;
+}
+
+nav .logo img {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Estilos para o tema de alto contraste */
+body.dark-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-contrast nav {
+    background-color: #fff;
+}
+
+body.dark-contrast nav ul li a {
+    color: #000;
+}
+
+body.dark-contrast nav ul li a:hover {
+    background-color: #aaa;
+}
+
+body.light-contrast {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-contrast nav {
+    background-color: #000;
+}
+
+body.light-contrast nav ul li a {
+    color: #fff;
+}
+
+body.light-contrast nav ul li a:hover {
+    background-color: #333;
+}
